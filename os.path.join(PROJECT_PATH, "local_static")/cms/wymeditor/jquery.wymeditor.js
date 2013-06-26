@@ -532,7 +532,7 @@ jQuery.fn.wymeditor = function (options) {
                     '"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">' +
             '<html dir="' + WYMeditor.DIRECTION + '">' +
                 '<head>' +
-                    '<link rel="stylesheet" type="text/css" media="screen" ' +
+                    '<link rel="stylesheet" type="text/css" uploads="screen" ' +
                         'href="' + WYMeditor.CSS_PATH + '" />' +
                     '<title>' + WYMeditor.DIALOG_TITLE + '</title>' +
                     '<script type="text/javascript" ' +

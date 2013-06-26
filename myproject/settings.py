@@ -54,34 +54,36 @@ USE_L10N = True
 USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
-# Example: "/var/www/example.com/media/"
-MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
+# Example: "/var/www/example.com/uploads/"
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "uploads")
 
-# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# URL that handles the uploads served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
-# Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = '/media/'
+# Examples: "http://example.com/uploads/", "http://uploads.example.com/"
+MEDIA_URL = 'http://localhost:8000/uploads/'
+print MEDIA_ROOT
+print MEDIA_URL
 
-# Absolute path to the directory local_static files should be collected to.
-# Don't put anything in this directory yourself; store your local_static files
-# in apps' "local_static/" subdirectories and in STATICFILES_DIRS.
-# Example: "/var/www/example.com/local_static/"
-STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
+# Absolute path to the directory static files should be collected to.
+# Don't put anything in this directory yourself; store your static files
+# in apps' "static/" subdirectories and in STATICFILES_DIRS.
+# Example: "/var/www/example.com/static/"
+STATIC_ROOT = os.path.join(PROJECT_PATH, "ProfileApp/static")
 
-# URL prefix for local_static files.
-# Example: "http://example.com/local_static/", "http://local_static.example.com/"
+
+# URL prefix for static files.
+# Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-# Additional locations of local_static files
+# Additional locations of static files
 STATICFILES_DIRS = (
-    # Put strings here, like "/home/html/local_static" or "C:/www/django/local_static".
+    # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(PROJECT_PATH, "local_static"),
     )
 
 
-# List of finder classes that know how to find local_static files in
+# List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -175,7 +177,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'PlugInApp'
+    'ProfileApp'
 )
 
 # A sample logging configuration. The only tangible logging

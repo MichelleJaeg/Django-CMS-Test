@@ -407,7 +407,7 @@ def _show_placeholder_for_page(context, placeholder_name, page_lookup, lang=None
     """
     Shows the content of a page with a placeholder name and given lookup
     arguments in the given language.
-    This is useful if you want to have some more or less local_static content that is
+    This is useful if you want to have some more or less static content that is
     shared among many pages, such as a footer.
 
     See _get_page_by_untyped_arg() for detailed information on the allowed types

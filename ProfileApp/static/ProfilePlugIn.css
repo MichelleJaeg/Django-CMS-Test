@@ -1,0 +1,18 @@
+.image {
+    width: 75px;
+    height: 75px;
+    float: left;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+
+.text {
+    width: 600px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.profile {
+    clear: left;
+    padding: 40px;
+}

@@ -1,0 +1,17 @@
+{% load sekizai_tags staticfiles %}
+
+
+{% block content %}
+
+{% addtoblock "css" %}<link href="{% static "ProfilePlugin.css" %}" rel="stylesheet" media="screen" type="text/css">{% endaddtoblock %}
+
+{% for profile in profiles %}
+    <div class="profile">
+        <img class="image" src="{{ MEDIA_URL }}{{ profile.image }}">
+        <p class="text" > {{ profile.bio }} </p>
+    </div>
+{% endfor %}
+{% endblock content %}
+
+
+

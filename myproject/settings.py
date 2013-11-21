@@ -9,7 +9,6 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Michelle Swank', 'michelles82@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -92,7 +91,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'dr2bl2ao1ojao)1s_cope^_cbk9)1fz(0qu+(%3(y=7^^!kc=^'
+SECRET_KEY = 
 
 # List of callables that know how to import my_templates from various sources.
 TEMPLATE_LOADERS = (
